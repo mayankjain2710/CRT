@@ -4,9 +4,9 @@ import pandas # type: ignore
 import sklearn # type: ignore
 import pickle
 
-model = pickle.load(open('C:/Users/Public/H2S CRT Tool/model.pkl','rb'))
-sc = pickle.load(open('C:/Users/Public/H2S CRT Tool/standscaler.pkl','rb'))
-mx = pickle.load(open('C:/Users/Public/H2S CRT Tool/minmaxscaler.pkl','rb'))
+model = pickle.load(open('model.pkl','rb'))
+sc = pickle.load(open('standscaler.pkl','rb'))
+mx = pickle.load(open('minmaxscaler.pkl','rb'))
 
 
 app = Flask(__name__)
